@@ -70,3 +70,7 @@ add_dependencies(mlp_gpu ${CPPEX_DEPS})
 add_executable(resnet resnet.cpp ${CPP_PACKAGE_HEADERS})
 target_link_libraries(resnet ${CPP_EXAMPLE_LIBS})
 add_dependencies(resnet ${CPPEX_DEPS})
+
+add_executable(hello_mxnet hello_mxnet.cpp ${CPP_PACKAGE_HEADERS})
+target_link_libraries(hello_mxnet ${CPP_EXAMPLE_LIBS})
+add_dependencies(hello_mxnet ${CPPEX_DEPS})
